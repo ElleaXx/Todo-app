@@ -1,0 +1,30 @@
+.todoListHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.todoListHeader .btnMain {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todoListHeader .btn {
+    width: 30%;
+}
+
+.todoListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control {
+    padding: 0 24px;
+}
+
+.done {
+    text-decoration: line-through;
+}
