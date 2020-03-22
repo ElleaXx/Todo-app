@@ -1,12 +1,17 @@
 import React from 'react';
 import TodoListItemFunc from '../components/Todo-list-item'
 
-const InputList = ({todos}) => {
-    const elements = todos.map((item) =>{
+class InputList extends React.Component {
+    render(){
+
+        const {todos,listHroupItem,onDeleed} = this.props
+        const elements = todos.map((item) =>{
         return (
-        <li key ={item.id} className ="list-group-item">
-            <TodoListItemFunc {...item}/>
-        </li>)
+        <li key ={item.id} className ={listHroupItem}>
+            <TodoListItemFunc {...item}
+            onDeleed ={() =>onDeleed(item.id)}/>
+        </li>
+        )
     })
 
     return (
@@ -15,4 +20,6 @@ const InputList = ({todos}) => {
         </ul>
     )
     }
+}
+
 export default InputList

@@ -28,3 +28,12 @@
 .done {
     text-decoration: line-through;
 }
+
+span {
+    cursor: pointer;
+}
+
+.warning {
+    border: 2px solid;
+    border-radius: 5px;
+}
